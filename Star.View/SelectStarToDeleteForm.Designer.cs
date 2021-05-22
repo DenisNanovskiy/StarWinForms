@@ -39,20 +39,23 @@ namespace Star.View
             this.StarsListBox.BackColor = System.Drawing.Color.MistyRose;
             this.StarsListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StarsListBox.FormattingEnabled = true;
-            this.StarsListBox.ItemHeight = 16;
+            this.StarsListBox.ItemHeight = 20;
             this.StarsListBox.Location = new System.Drawing.Point(0, 0);
+            this.StarsListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StarsListBox.Name = "StarsListBox";
-            this.StarsListBox.Size = new System.Drawing.Size(654, 212);
+            this.StarsListBox.Size = new System.Drawing.Size(871, 244);
             this.StarsListBox.TabIndex = 0;
+            this.StarsListBox.SelectedIndexChanged += new System.EventHandler(this.StarsListBox_SelectedIndexChanged);
             // 
             // SelectStarButton
             // 
             this.SelectStarButton.BackColor = System.Drawing.Color.PaleGreen;
             this.SelectStarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SelectStarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SelectStarButton.Location = new System.Drawing.Point(388, 219);
+            this.SelectStarButton.Location = new System.Drawing.Point(517, 270);
+            this.SelectStarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SelectStarButton.Name = "SelectStarButton";
-            this.SelectStarButton.Size = new System.Drawing.Size(148, 50);
+            this.SelectStarButton.Size = new System.Drawing.Size(197, 62);
             this.SelectStarButton.TabIndex = 15;
             this.SelectStarButton.Text = "Выбрать";
             this.SelectStarButton.UseVisualStyleBackColor = false;
@@ -63,9 +66,10 @@ namespace Star.View
             this.CancelButton.BackColor = System.Drawing.Color.Coral;
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CancelButton.Location = new System.Drawing.Point(542, 219);
+            this.CancelButton.Location = new System.Drawing.Point(723, 270);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(100, 50);
+            this.CancelButton.Size = new System.Drawing.Size(133, 62);
             this.CancelButton.TabIndex = 16;
             this.CancelButton.Text = "Отмена";
             this.CancelButton.UseVisualStyleBackColor = false;
@@ -73,19 +77,21 @@ namespace Star.View
             // 
             // SelectStarToDeleteForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(654, 281);
+            this.ClientSize = new System.Drawing.Size(872, 346);
             this.ControlBox = false;
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SelectStarButton);
             this.Controls.Add(this.StarsListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SelectStarToDeleteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Выберите звезду на удаление";
+            this.Load += new System.EventHandler(this.SelectStarToDeleteForm_Load);
             this.ResumeLayout(false);
 
         }
