@@ -13,8 +13,6 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -73,7 +71,6 @@
       <DependentUpon>StarCreatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StarViewModel.cs" />
-    <Compile Include="Tests.cs" />
     <EmbeddedResource Include="SelectStarToDeleteForm.resx">
       <DependentUpon>SelectStarToDeleteForm.cs</DependentUpon>
     </EmbeddedResource>
